@@ -6,3 +6,10 @@
         </video>
     </div>
 </template>
+
+<style scoped>
+video{
+    height: 60%;
+    width: 100%
+}
+</style>>
