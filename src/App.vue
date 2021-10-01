@@ -7,11 +7,8 @@
           <div style="color:white">
             <!-- 页头左侧logo -->
             <div class="header-left center">
-              <img class="left-logo" height="60" src="./assets/京涛海纳.png">
-              <div class="left-text center">
-                  <div class="logo-text center" style="font-size:22px;font-weight:bold">京 濤 海 納 工 作 室</div>
-                  <div class="logo-text center" style="font-size:12px">UNION CREATIVE MEDIA STUDIO</div>
-              </div>
+              <img class="left-logo" src="./assets/京涛海纳.png">
+              <img class="left-logo" src="./assets/京涛.png">
             </div>
             
             <!-- 页头中间 中心 -->
@@ -23,14 +20,16 @@
         <!-- 页面主体 -->
         <el-container>
           <!-- 侧边栏 -->
-          <el-aside width="200px">
-            <div class="aside-chose">
-              
+          <el-aside>
+            <div class="aside">
+              <div style="margin:10px 0"><router-link to="/anxiang">暗香</router-link></div>
+              <div style="margin:10px 0"><router-link to="/lingyin">泠音</router-link></div>
             </div>
           </el-aside>
 
           <!-- 内容页 -->
           <el-main>
+            本网站尚未完工，敬请期待。
             <router-view></router-view>
           </el-main>
 
@@ -69,7 +68,7 @@ html,body,#app{
   background-color: red;
   color: var(--el-text-color-primary);
   text-align: center;
-  height: 80px;
+  height: 36rpx;
 }
 
 .el-aside {
@@ -77,6 +76,7 @@ html,body,#app{
   color: var(--el-text-color-primary);
   text-align: center;
   height: auto;
+  width: 80rpx;
 }
 
 .el-main {
@@ -102,7 +102,7 @@ body > .el-container {
   float: left;
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 36rpx;
 }
 
 .center{
@@ -111,31 +111,24 @@ body > .el-container {
   align-items: center;
 }
 
-.left-text{
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
-
-.logo-text{
-  height: 23px;
-  width: 200px;
-  text-align: center;
+.left-logo{
+  height: 30rpx;
 }
 
 .center-title{
-  width: 240px;
-  height: 80px;
+  width: 300rpx;
+  height: 36rpx;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 28px;
+  font-size: 13rpx;
   font-weight: bold;
 }
 
-.aside-chose{
+.aside{
   display: flex;
   flex-direction: column;
+  width: 80rpx;
 }
 
 </style>
