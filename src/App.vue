@@ -22,14 +22,13 @@
           <!-- 侧边栏 -->
           <el-aside>
             <div class="aside">
-              <div style="margin:10px 0"><router-link to="/anxiang">暗香</router-link></div>
-              <div style="margin:10px 0"><router-link to="/lingyin">泠音</router-link></div>
+              <div style="margin:10px 0"><router-link to="/toolDownload">工具资料下载</router-link></div>
+              <div style="margin:10px 0"><router-link to="/webLink">学习网站链接</router-link></div>
             </div>
           </el-aside>
 
           <!-- 内容页 -->
           <el-main>
-            本网站尚未完工，敬请期待。
             <router-view></router-view>
           </el-main>
 
@@ -62,6 +61,16 @@ html,body,#app{
 </style>
 
 <style scoped>
+a{
+  text-decoration:none;
+  color:black;
+}
+a:hover{
+  color:red;
+}
+a:active{
+  color: purple;
+}
 
 .el-header,
 .el-footer {
@@ -72,17 +81,18 @@ html,body,#app{
 }
 
 .el-aside {
-  background-color: lightgreen;
+  background: lightgray;
+  border-right: solid gray 1px;
   color: var(--el-text-color-primary);
   text-align: center;
   height: auto;
-  width: 80rpx;
+  width: 85rpx;
 }
 
 .el-main {
-  background-color: lightgray;
+
   color: var(--el-text-color-primary);
-  text-align: center;
+
 }
 
 body > .el-container {
