@@ -61,7 +61,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 5px;
+    margin: 10px 0;
 }
 .photo{
     height: 25rpx;
