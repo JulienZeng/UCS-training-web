@@ -18,7 +18,6 @@
                         </template>
                     </van-cell>
                 </div>
-                
             </van-cell-group>
         </div>
     </div>
@@ -36,7 +35,15 @@ export default {
                     shotIntroduction:'一款强大且好用的编译器',
                     mainIntroduction:'',
                     downloadUrl:'http://zjlserver.site:3030/VSCodeUserSetup-x64-1.61.0.exe'
-                }
+                },
+                {
+                    photoUrl:require('../assets/Ai.png'),
+                    name:'Adobe Illustrator CC 2020',
+                    shotIntroduction:'Adobe公司领先的矢量图形软件',
+                    mainIntroduction:'',
+                    downloadUrl:'http://zjlserver.site:3030/Adobe_Illustrator_CC2020_Windows.exe'
+                },
+
             ]
         }
     },
@@ -54,6 +61,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 5px;
 }
 .photo{
     height: 25rpx;
